@@ -1,0 +1,158 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:  0;
+}
+
+
+
+header button {
+    border-radius: 8px;
+    line-height: 40px;
+    padding: 0.3em 0.5em;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    text-transform: uppercase;
+    width: 160px;
+    height: 45px;
+    font-size: 1.2em;
+    background-color: white;
+    color: cornflowerblue;
+    border-bottom: 0 0 25px 0;
+    border:none;
+    letter-spacing: .025em;
+    outline: none;
+    display: inline-block;
+}
+
+header {
+    background-image:url(https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    font-weight: 400;
+    
+}
+
+/* 
+Cactus Image URL:  https://images.unsplash.com/photo-1485841890310-6a055c88698a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80 
+*/
+
+@media screen and (max-width: 500px) {
+    h1 {
+        color: green;
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    h1 {
+        color: orangered;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        color:rgb(33, 252, 62);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 50vh;
+        font-size: 0.5em;
+    }
+    main h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #cards {
+        flex-direction: column;
+    }
+    #cards section:nth-of-type(2) {
+        border-left: none;
+        border-top: 8px solid #f6f9fc;
+    }
+    
+}
+
+a button:hover {
+     color:crimson;
+ }
+
+ #cards a:hover {
+     color:cyan;
+     
+ }
+
+ #cards a {
+    padding: 15px;
+ }
+
+#cards {
+    background-color: white;
+    max-width: 1200px;
+    border-radius: 1em;
+    display: flex;
+    margin-top: 2em;
+    
+}
+
+ main h2 {
+     text-align: center;
+ }
+
+main {
+    background-color: #f6f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards img {
+    width: 66px;
+}
+
+#cards section {
+    padding: 4em;
+}
+
+#cards h3 {
+    color: #24b47e;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#cards p {
+    line-height: 1.8em;
+    color: #525f7f;
+}
+
+#cards a {
+    text-decoration: none;
+    color: #6772e5;
+    font-weight: 400;
+}
+
+#cards section:nth-of-type(2) {
+    border-left: 8px solid #f6f9fc;
+}
+
+main h2 {
+    color: #6772e5;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 2em;
+}
